@@ -28,6 +28,7 @@ FLAGS=(
   # --enable-libass         # enable libass
   # --enable-libfribidi     # enable libfribidi
   # --enable-libaom         # enable libaom
+  # --enable-libtheora      # enable libtheora
   --enable-decoder=aac
   --enable-decoder=alac
   --enable-decoder=flac
@@ -153,7 +154,6 @@ FLAGS=(
   --enable-nonfree        # required by fdk-aac
   --enable-zlib           # enable zlib
   --enable-libwavpack     # enable libwavpack
-  --enable-libtheora      # enable libtheora
   --enable-libvorbis      # enable libvorbis
   --enable-libopus        # enable opus
   --enable-libfdk-aac     # enable libfdk-aac
