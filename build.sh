@@ -10,26 +10,31 @@ emcc -v
 $SCRIPT_ROOT/install-deps.sh
 # build zlib
 $SCRIPT_ROOT/build-zlib.sh
+
+#### disable all video libaray
 # build x264
 # $SCRIPT_ROOT/build-x264.sh
 # build x265
 # $SCRIPT_ROOT/build-x265.sh
 # build libvpx
 # $SCRIPT_ROOT/build-libvpx.sh
+# build theora
+# $SCRIPT_ROOT/build-theora.sh
+
 # build WavPack
 $SCRIPT_ROOT/build-wavpack.sh
 # build lame
 $SCRIPT_ROOT/build-lame.sh
-# build fdk-aac
-$SCRIPT_ROOT/build-fdk-aac.sh
+# build fdk-aac use built-in aac codec
+#$SCRIPT_ROOT/build-fdk-aac.sh
 # build ogg
 $SCRIPT_ROOT/build-ogg.sh
 # build vorbis
 $SCRIPT_ROOT/build-vorbis.sh
-# build theora
-# $SCRIPT_ROOT/build-theora.sh
 # build opus
 $SCRIPT_ROOT/build-opus.sh
+
+#### disable all font library
 # build freetype2
 # $SCRIPT_ROOT/build-freetype2.sh
 # build libwebp
@@ -42,6 +47,7 @@ $SCRIPT_ROOT/build-opus.sh
 # $SCRIPT_ROOT/build-libass.sh
 # build aom (disabled as it is extremely slow)
 # $SCRIPT_ROOT/build-aom.sh
+
 # configure FFmpeg with Emscripten
 $SCRIPT_ROOT/configure-ffmpeg.sh
 # build ffmpeg.wasm core
