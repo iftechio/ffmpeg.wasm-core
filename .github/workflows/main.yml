@@ -27,7 +27,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: ffmpeg-core
-          path: wasm/dist
+          path: wasm/packages/core/dist
   # Disable macos build due to there is no ldconfig command
   # during freetype2 build.
   # macos-build:
