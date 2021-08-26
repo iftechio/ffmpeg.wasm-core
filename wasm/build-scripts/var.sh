@@ -17,7 +17,7 @@ if [[ "$OSTYPE" == "linux-gnu"* ]]; then
   # Use closure complier only in linux environment
   OPTIM_FLAGS=(
     "${OPTIM_FLAGS[@]}"
-    --closure 1
+    --closure 0
   )
 fi
 
