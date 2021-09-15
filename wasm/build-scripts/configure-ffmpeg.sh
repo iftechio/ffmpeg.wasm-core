@@ -29,4 +29,4 @@ FLAGS=(
 #  --enable-libfdk-aac     # disable libfdk-aac, use ffmpeg built-in aac codec
 )
 echo "FFMPEG_CONFIG_FLAGS=${FLAGS[@]}"
-EM_PKG_CONFIG_PATH=${EM_PKG_CONFIG_PATH} emconfigure ./configure "${FLAGS[@]}"
+emconfigure ./configure "${FLAGS[@]}"

@@ -8,7 +8,7 @@ on:
     branches: [ audio-only-build ]
 
 env:
-  EM_VERSION: 2.0.8
+  EM_VERSION: 2.0.27
   EM_CACHE_FOLDER: 'emsdk-cache'
 
 jobs:
@@ -27,7 +27,7 @@ jobs:
       - uses: actions/upload-artifact@master
         with:
           name: ffmpeg-core
-          path: wasm/dist
+          path: wasm/packages/core/dist
   # Disable macos build due to there is no ldconfig command
   # during freetype2 build.
   # macos-build:
