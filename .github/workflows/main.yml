@@ -3,13 +3,13 @@ name: FFmpeg.wasm
 # events but only for the master branch
 on:
   push:
-    branches: [ audio-only-build ]
+    branches: [filter-arnndn]
   pull_request:
-    branches: [ audio-only-build ]
+    branches: [filter-arnndn]
 
 env:
   EM_VERSION: 2.0.27
-  EM_CACHE_FOLDER: 'emsdk-cache'
+  EM_CACHE_FOLDER: "emsdk-cache"
 
 jobs:
   linux-build_with_docker:
