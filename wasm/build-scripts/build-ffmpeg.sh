@@ -32,6 +32,8 @@ FLAGS=(
   -s EXPORTED_RUNTIME_METHODS="[FS, cwrap, ccall, setValue, writeAsciiToMemory]"   # export preamble funcs
   -s INITIAL_MEMORY=268435456                   # 256 * 1024 * 1024 = 268435456  bytes ~= 256MB
   -s ALLOW_MEMORY_GROWTH=1
+  -s PTHREADS_DEBUG=1
+  -s LIBRARY_DEBUG=1
   --pre-js wasm/src/pre.js
   --post-js wasm/src/post.js
   $OPTIM_FLAGS
